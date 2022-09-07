@@ -12,12 +12,13 @@ const colors: string[] = [
   "#45A4FF",
   "#D683FF",
   "#B4B4B8",
+  "#FFFFFF"
 ];
 
 export default function NewCategoryPage() {
   const navigate = useNavigate();
   const initialValues: any = { email: "", theme: "" };
-  const [tag, setTag] = useState<string>();
+  const [tag, setTag] = useState<string>("#FFFFFF");
 
   const handleSubmit = (value: any) => {};
 
@@ -49,7 +50,7 @@ export default function NewCategoryPage() {
                   <p className="mx-2">Tags</p>
                   <div className="flex-1 ">
                     <div
-                      className="w-[150px] h-10 rounded-xl"
+                      className="w-[150px] h-10 rounded-xl border-[1px] border-[#b8bfc0]"
                       style={{ background: `${tag}` }}
                     />
                   </div>
@@ -59,7 +60,7 @@ export default function NewCategoryPage() {
                     return (
                       <div
                         className={` w-8 h-8 cursor-pointer rounded-full 
-                      hover:w-10 hover:h-10 transition-all duration-200`}
+                      hover:w-10 hover:h-10 transition-all duration-200 `}
                         style={{ background: `${item}` }}
                         onClick={() => setTag(item)}
                       />

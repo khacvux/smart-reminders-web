@@ -5,11 +5,14 @@ import NewCategoryPage from "../pages/NewCategoryPage";
 import NotesPage from "../pages/NotesPage";
 
 export default function AnimateAuthRoutes() {
-    const location = useLocation()
+  const location = useLocation();
   return (
     <AnimatePresence exitBeforeEnter>
-      <Routes location={location} key={location.pathname} >
-        <Route path="/" element={<HomePage />} />
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/"
+          element={<HomePage />}
+        />
         <Route path="/notes" element={<NotesPage />} />
         <Route path="/new-category" element={<NewCategoryPage />} />
       </Routes>
