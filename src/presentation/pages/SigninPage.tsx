@@ -22,7 +22,7 @@ export default function SigninPage() {
             <Form>
               <div
                 className=" w-full md:w-[400px] h-[100px] flex flex-row items-center 
-              rounded-xl overflow-hidden bg-[#f3f4f1] p-3 border border-[#b8bfc0] space-x-4"
+              rounded-xl overflow-hidden bg-light2 p-3 border border-[#b8bfc0] space-x-4"
               >
                 <div className="flex-1 flex flex-col items-center">
                   <TextField name="email" type="email" placeholder="Email" />

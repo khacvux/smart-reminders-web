@@ -15,7 +15,7 @@ export default function TextField({ textarea, ...props }: ITextFieldProps) {
     <>
       {textarea ? (
         <textarea
-          className="bg-[#dedfdc] outline-none p-5 border-x border-x-1
+          className="bg-light2 outline-none p-5 border-x border-x-1
          border-[#a5a7a9] font-light resize-none w-full my-3 h-80"
           id={field.name}
           value={field.value}
@@ -24,7 +24,7 @@ export default function TextField({ textarea, ...props }: ITextFieldProps) {
         />
       ) : (
         <input
-          className="w-full p-3 bg-[#f3f4f1] outline-none"
+          className="w-full p-3 bg-light2 outline-none"
           id={field.name}
           value={field.value}
           onChange={field.onChange}
