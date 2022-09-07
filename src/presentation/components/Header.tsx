@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import CategoryCard from "./CategoryCard";
-import "../../../public/plus.png";
 import { useDispatch } from "react-redux";
 import { openAddReminderCard } from "../../core/redux/modal/actions";
 
@@ -14,7 +13,12 @@ export default function Header() {
         flex items-start justify-center px-5 flex-col"
           to="/"
         >
-          <img src="../../../ihome.png" alt="" className="w-10 h-11 mb-5 m-2" />
+            <img
+              src="../../../ihome.png"
+              alt=""
+              className="w-7 h-7 mb-6 m-2"
+            />
+
           <p className=" text-3xl font-extralight ">Home</p>
         </Link>
         <Link
@@ -30,11 +34,7 @@ export default function Header() {
         cursor-pointer flex items-start justify-center px-5 flex-col"
           onClick={() => dispatch(openAddReminderCard())}
         >
-          <img
-            src="../../../draft.png"
-            alt=""
-            className="w-8 h-8 mb-5 m-2"
-          />
+          <img src="../../../draft.png" alt="" className="w-8 h-8 mb-5 m-2" />
           <p className=" text-3xl font-extralight ">Quick Notes</p>
         </button>
         <CategoryCard />
