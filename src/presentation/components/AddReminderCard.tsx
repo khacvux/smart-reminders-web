@@ -10,7 +10,7 @@ export default function AddReminderCard() {
    flex flex-col items-center justify-center"
    onClick={() => dispatch(openAddReminderCard())}
     >
-      <img src="../../public/plus.png" alt="" className="w-10 h-10" />
+      <img src="../../plus.png" alt="" className="w-10 h-10" />
     </button>
   );
 }

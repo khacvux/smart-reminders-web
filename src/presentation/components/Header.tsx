@@ -31,7 +31,7 @@ export default function Header() {
           onClick={() => dispatch(openAddReminderCard())}
         >
           <img
-            src="../../../public/draft.png"
+            src="../../../draft.png"
             alt=""
             className="w-8 h-8 mb-5 m-2"
           />
